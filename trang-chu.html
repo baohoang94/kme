@@ -18,41 +18,21 @@
             content="Cửa h&#224;ng linh kiện điện tử KME chuy&#234;n cung cấp linh kiện điện tử sỉ v&#224; lẻ. Đặt h&#224;ng theo y&#234;u cầu">
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
         <!-- CSS ================================================== -->
-        <link href='css/timber.scss.css' rel='stylesheet'
-            type='text/css' media='all'>
-        <link href='css/suplo-style.scss.css' rel='stylesheet'
-            type='text/css' media='all'>
-        <link href='css/owl.carousel.css' rel='stylesheet'
-            type='text/css' media='all'>
-        <link href='css/owl.theme.css' rel='stylesheet' type='text/css'
-            media='all'>
-        <link href='css/owl.transitions.css' rel='stylesheet'
-            type='text/css' media='all'>
+        <link href='css/timber.scss.css' rel='stylesheet' type='text/css' media='all'>
+        <link href='css/suplo-style.scss.css' rel='stylesheet' type='text/css' media='all'>
+        <link href='css/owl.carousel.css' rel='stylesheet' type='text/css' media='all'>
+        <link href='css/owl.theme.css' rel='stylesheet' type='text/css' media='all'>
+        <link href='css/owl.transitions.css' rel='stylesheet' type='text/css' media='all'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' type='text/javascript'></script>
         <script src='js/modernizr.min.js' type='text/javascript'></script>
-        <script>
-            window.file_url = "//file.hstatic.net/1000223613/file/";
-            window.asset_url = "//theme.hstatic.net/1000223613/1000293682/14/?v=1114";
-            var check_variant = true;
-            var check_variant_quickview = true;
-        </script>
     </head>
     <body id="kme" class="template-index">
         <script id='autoAdsMaxLead-widget-script'
             src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=e0b2d2799b434dcba478f145b6ef4a52'
             type='text/javascript' charset='UTF-8' async=""></script>
         <div id="fb-root"></div>
-        <!-- <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1393889054029579";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script> -->
         <div id="CartDrawer" class="drawer drawer--right">
             <div class="drawer__header">
                 <div class="drawer__title h3">Giỏ hàng</div>
@@ -7735,7 +7715,7 @@
             .modal {
             display: none;
             position: fixed;
-            z-index: 999;
+            z-index: 999999;
             left: 0;
             top: 0;
             width: 100%;
@@ -7852,6 +7832,7 @@
         </script>
         <script>
             $(document).ready(function () {
+                // Begin show/hide popup
                 $('.btnQuickview').click(function() {
                     $('#productQuickView').css('display', 'block');
                 });
@@ -7861,6 +7842,7 @@
                 $('.modal-content').click(function(event) {
                     event.stopPropagation();
                 });
+                // End show/hide popup
             	$('#example').height(function (index, height) {
             		return (height + 20);
             	});
