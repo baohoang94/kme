@@ -7735,7 +7735,7 @@
             .modal {
             display: none;
             position: fixed;
-            z-index: 999999;
+            z-index: 999;
             left: 0;
             top: 0;
             width: 100%;
@@ -7743,7 +7743,7 @@
             overflow: hidden;
             background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.4);
-            transtion: all .5s;
+            transition: all .5s;
             }
             .modal-content {
             background-color: #fefefe;
@@ -7752,7 +7752,7 @@
             border: 1px solid #888;
             width: 80%;
             max-width: 780px;
-            transform: translatey(-30px);
+            transform: translateY(-30px);
             transition: all .5s;
             }
             .close {
@@ -7852,6 +7852,15 @@
         </script>
         <script>
             $(document).ready(function () {
+                $('.btnQuickview').click(function() {
+                    $('#productQuickView').css('display', 'block');
+                });
+                $('#productQuickView, #close').click(function() {
+                    $('#productQuickView').css('display', 'none');
+                });
+                $('.modal-content').click(function(event) {
+                    event.stopPropagation();
+                });
             	$('#example').height(function (index, height) {
             		return (height + 20);
             	});
