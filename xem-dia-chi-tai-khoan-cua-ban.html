@@ -33,7 +33,17 @@
             src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=e0b2d2799b434dcba478f145b6ef4a52'
             type='text/javascript' charset='UTF-8' async=""></script>
     </head>
-    <body id="tin-tuc" class="customer-logged-in template-blog" >
+    <body id="dia-chi" class="customer-logged-in template-customers-addresses" >
+        <script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=e0b2d2799b434dcba478f145b6ef4a52' type='text/javascript' charset='UTF-8' async></script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1393889054029579";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div id="CartDrawer" class="drawer drawer--right">
             <div class="drawer__header">
                 <div class="drawer__title h3">Giỏ hàng</div>
@@ -3312,381 +3322,154 @@
                     <div class="breadcrumb-wrapper">
                         <a href="/" title="Quay trở về trang chủ">Trang chủ</a>
                         <span aria-hidden="true">&rsaquo;</span>
-                        <span>Tin tức</span>
+                        <span>Địa chỉ</span>
                     </div>
                 </div>
             </div>
         </section>
         <div id="PageContainer" class="is-moved-by-drawer">
             <main class="main-content" role="main">
-                <section id="blog-wrapper">
+                <section id="other-sections-wrapper">
                     <div class="wrapper">
                         <div class="inner">
-                            <h1 class="seo">
-                                Tin tức
-                            </h1>
-                            <div class="grid">
-                                <div class="grid__item large--three-twelfths medium--one-whole small--one-whole">
-                                    <div class="blog-sidebar-wrapper">
-                                        <div class="blog-sidebar-content blog-categories">
-                                            <button class="accordion trigger-first">Thể loại</button>
-                                            <div class="panel">
-                                                <ul class="no-bullets">
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="blog-sidebar-content blog-recent-articles">
-                                            <button class="accordion trigger-first">Bài viết gần đây</button>
-                                            <div class="panel">
-                                                <ul class="no-bullets">
-                                                    <li>
-                                                        <a href="/blogs/news/khach-hang-trung-thuong-chuong-trinh-boc-tham-may-man-dau-xuan">Khách hàng trúng thưởng chương trình bốc thăm may mắn đầu xuân</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/blogs/news/huong-dan-su-dung-module-nguon-dc-dc-2-1a-dau-ra-linh-dong-adj-1-8v-2-5v-3-3v-5v-9v-12v">Hướng dẫn sử dụng module nguồn DC-DC 2.1A đầu ra linh động (ADJ, 1.8V, 2.5V, 3.3V, 5V, 9V, 12V)</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/blogs/news/kme-tuyen-dung-2018">KME Tuyển dụng 2018</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/blogs/news/so-sanh-anten-thu-dong-va-anten-tich-cuc">So sánh Anten thụ động và Anten tích cực</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="/blogs/news/syhnc-and-atmega8">SYHNC and Atmega8</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="blog-sidebar-content blog-all-tags">
-                                            <button class="accordion trigger-first">Từ khóa</button>
-                                            <div class="panel">
-                                                <div class="tags-wrapper">
-                                                    <a href="/blogs/news/tagged/do-am" title="Show articles matching tag độ ẩm">độ ẩm</a>
-                                                    <a href="/blogs/news/tagged/do-do-am-khong-khi" title="Show articles matching tag đo độ ẩm không khí">đo độ ẩm không khí</a>
-                                                    <a href="/blogs/news/tagged/hs1101" title="Show articles matching tag HS1101">HS1101</a>
-                                                    <a href="/blogs/news/tagged/nguon-dc" title="Show articles matching tag nguồn DC">nguồn DC</a>
-                                                    <a href="/blogs/news/tagged/anten-gps" title="Show articles matching tag Anten GPS">Anten GPS</a>
-                                                    <a href="/blogs/news/tagged/iout-max" title="Show articles matching tag IOUT Max">IOUT Max</a>
-                                                    <a href="/blogs/news/tagged/thong-so-nguon-dc" title="Show articles matching tag thông số nguồn DC">thông số nguồn DC</a>
-                                                    <a href="/blogs/news/tagged/iin-min" title="Show articles matching tag IIN min">IIN min</a>
-                                                    <a href="/blogs/news/tagged/anten-thu-dong" title="Show articles matching tag Anten thụ động">Anten thụ động</a>
-                                                    <a href="/blogs/news/tagged/anten-tich-cuc" title="Show articles matching tag Anten tích cực">Anten tích cực</a>
-                                                    <a href="/blogs/news/tagged/li-xi" title="Show articles matching tag lì xì">lì xì</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <header class="section-header">
+                                <h1 class="section-header__left">Tài khoản của bạn</h1>
+                                <div class="section-header__right">
+                                    <a href="#" class="btn" onclick="Haravan.CustomerAddress.toggleNewForm(); return false;">Thêm địa chỉ</a>
                                 </div>
-                                <div class="grid__item large--nine-twelfths medium--one-whole small--one-whole">
-                                    <div class="article-loop">
-                                        <div class="grid-uniform">
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/khach-hang-trung-thuong-chuong-trinh-boc-tham-may-man-dau-xuan">
-                                                        <img src="http://file.hstatic.net/1000223613/article/700x245-1_2a63b6c7ca5d4d9097d4d59c79185d56_large.jpg" alt="Khách hàng trúng thưởng chương trình bốc thăm may mắn đầu xuân" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/khach-hang-trung-thuong-chuong-trinh-boc-tham-may-man-dau-xuan">
-                                                        Khách hàng trúng thưởng chương trình bốc thăm may mắn đầu xuân
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        Trong không khí vui tươi, phấn khởi mừng xuân mới, nhiều phần thưởng hấp dẫn đã tìm được chủ nhân. Xin chúc mừng anh ...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>18</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 02</span>
-                                                                        <span class="publishYear">2019</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                            </header>
+                            <hr class="hr--small">
+                            <div class="grid">
+                                <div class="grid__item one-third medium-down--one-whole">
+                                    <p><a href="/account">Trở về tài khoản</a></p>
+                                </div>
+                                <div class="grid__item two-thirds medium-down--one-whole">
+                                    <form accept-charset='UTF-8' action='/account/addresses' id='address_form_new' method='post'>
+                                        <input name='form_type' type='hidden' value='customer_address'>
+                                        <input name='utf8' type='hidden' value='✓'>
+                                        <div id="AddAddress" class="form-vertical" style="display:none;">
+                                            <h2>Thêm địa chỉ</h2>
+                                            <div class="grid">
+                                                <div class="grid__item one-half small--one-whole">
+                                                    <label for="AddressFirstNameNew">Tên</label>
+                                                    <input type="text" id="AddressFirstNameNew" class="input-full" name="address[first_name]" value="" autocapitalize="words">
+                                                </div>
+                                                <div class="grid__item one-half small--one-whole">
+                                                    <label for="AddressLastNameNew">Họ</label>
+                                                    <input type="text" id="AddressLastNameNew" class="input-full" name="address[last_name]" value="" autocapitalize="words">
                                                 </div>
                                             </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/huong-dan-su-dung-module-nguon-dc-dc-2-1a-dau-ra-linh-dong-adj-1-8v-2-5v-3-3v-5v-9v-12v">
-                                                        <img src="http://file.hstatic.net/1000223613/article/mach-giam-ap-dc-mini-3a_large.jpg" alt="Hướng dẫn sử dụng module nguồn DC-DC 2.1A đầu ra linh động (ADJ, 1.8V, 2.5V, 3.3V, 5V, 9V, 12V)" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/huong-dan-su-dung-module-nguon-dc-dc-2-1a-dau-ra-linh-dong-adj-1-8v-2-5v-3-3v-5v-9v-12v">
-                                                        Hướng dẫn sử dụng module nguồn DC-DC 2.1A đầu ra linh động (ADJ, 1....
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        Chào các bạn!Sau khi mua hàng, nhiều khách hàng có thắc mắc với KME về khó khăn trong cách mắc, đấu nối dây và cách s...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>21</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 11</span>
-                                                                        <span class="publishYear">2018</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <label for="AddressCompanyNew">Công ty</label>
+                                            <input type="text" id="AddressCompanyNew" class="input-full" name="address[company]" value="" autocapitalize="words">
+                                            <label for="AddressAddress1New">Địa chỉ 1</label>
+                                            <input type="text" id="AddressAddress1New" class="input-full" name="address[address1]" value="" autocapitalize="words">
+                                            <label for="AddressAddress2New">Địa chỉ 2</label>
+                                            <input type="text" id="AddressAddress2New" class="input-full" name="address[address2]" value="" autocapitalize="words">
+                                            <div class="grid">
+                                                <div class="grid__item large--one-half">
+                                                    <label for="AddressCityNew">Thành phố</label>
+                                                    <input type="text" id="AddressCityNew" class="input-full" name="address[city]" value="" autocapitalize="words">
+                                                </div>
+                                                <div class="grid__item large--one-half">
+                                                    <label for="AddressCountryNew">Quốc gia</label>
+                                                    <select id="AddressCountryNew" class="input-full" name="address[country]" data-default="">
+                                                        <option value"" data-provinces="[]">- Please Select --</option>
+                                                        <option value="Vietnam" data-provinces='["Hồ Chí Minh","Hà Nội","Đà Nẵng","An Giang","Bà Rịa - Vũng Tàu","Bắc Giang","Bắc Kạn","Bạc Liêu","Bắc Ninh","Bến Tre","Bình Định","Bình Dương","Bình Phước","Bình Thuận","Cà Mau","Cần Thơ","Cao Bằng","Đắk Lắk","Đắk Nông","Điện Biên","Đồng Nai","Đồng Tháp","Gia Lai","Hà Giang","Hà Nam","Hà Tĩnh","Hải Dương","Hải Phòng","Hậu Giang","Hòa Bình","Hưng Yên","Khánh Hòa","Kiên Giang","Kon Tum","Lai Châu","Lâm Đồng","Lạng Sơn","Lào Cai","Long An","Nam Định","Nghệ An","Ninh Bình","Ninh Thuận","Phú Thọ","Phú Yên","Quảng Bình","Quảng Nam","Quảng Ngãi","Quảng Ninh","Quảng Trị","Sóc Trăng","Sơn La","Tây Ninh","Thái Bình","Thái Nguyên","Thanh Hóa","Thừa Thiên Huế","Tiền Giang","Trà Vinh","Tuyên Quang","Vĩnh Long","Vĩnh Phúc","Yên Bái"]'>Vietnam</option>
+                                                        <option value="United States" data-provinces='["Alabama","Alaska","American Samoa","Arizona","Arkansas","Armed Forces Americas","Armed Forces Europe","Armed Forces Pacific","California","Colorado","Connecticut","Delaware","District of Columbia","Federated States of Micronesia","Florida","Georgia","Guam","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Marshall Islands","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Northern Mariana Islands","Ohio","Oklahoma","Oregon","Palau","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>United States</option>
+                                                        <option value="Thailand" data-provinces='["Amnat Charoen","Ang Thong","Bangkok","Bueng Kan","Buriram","Chachoengsao","Chai Nat","Chaiyaphum","Chanthaburi","Chiang Mai","Chiang Rai","Chon Buri","Chumphon","Kalasin","Kamphaeng Phet","Kanchanaburi","Khon Kaen","Krabi","Lampang","Lamphun","Loei","Lopburi","Mae Hong Son","Maha Sarakham","Mukdahan","Nakhon Nayok","Nakhon Pathom","Nakhon Phanom","Nakhon Ratchasima","Nakhon Sawan","Nakhon Si Thammarat","Nan","Narathiwat","Nong Bua Lam Phu","Nong Khai","Nonthaburi","Pathum Thani","Pattani","Pattaya","Phangnga","Phatthalung","Phayao","Phetchabun","Phetchaburi","Phichit","Phitsanulok","Phra Nakhon Si Ayutthaya","Phrae","Phuket","Prachin Buri","Prachuap Khiri Khan","Ranong","Ratchaburi","Rayong","Roi Et","Sa Kaeo","Sakon Nakhon","Samut Prakan","Samut Sakhon","Samut Songkhram","Saraburi","Satun","Sing Buri","Sisaket","Songkhla","Sukhothai","Suphan Buri","Surat Thani","Surin","Tak","Trang","Trat","Ubon Ratchathani","Udon Thani","Uthai Thani","Uttaradit","Yala","Yasothon"]'>Thailand</option>
+                                                    </select>
+                                                </div>
+                                                <div class="grid__item" id="AddressProvinceContainerNew" style="display:none">
+                                                    <label for="AddressProvinceNew">Tỉnh</label>
+                                                    <select id="AddressProvinceNew" class="input-full" name="address[province]" data-default=""></select>
+                                                </div>
+                                                <div class="grid__item large--one-half">
+                                                    <label for="AddressZipNew">Postal/Zip Code</label>
+                                                    <input type="text" id="AddressZipNew" class="input-full" name="address[zip]" value="" autocapitalize="characters">
+                                                </div>
+                                                <div class="grid__item large--one-half">
+                                                    <label for="AddressPhoneNew">Điện thoại</label>
+                                                    <input type="tel" id="AddressPhoneNew" class="input-full" name="address[phone]" value="">
                                                 </div>
                                             </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/kme-tuyen-dung-2018">
-                                                        <img src="http://file.hstatic.net/1000223613/article/145204-tuyen-dung_large.jpg" alt="KME Tuyển dụng 2018" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/kme-tuyen-dung-2018">
-                                                        KME Tuyển dụng 2018
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        Chào các bạn.Hiện tại KME đang tuyển dụng nhân viên bán hàng, kỹ thuậtYêu cầu:Giới tính: Nam/NữTrình độ: Đang là sinh...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>27</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 08</span>
-                                                                        <span class="publishYear">2018</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/so-sanh-anten-thu-dong-va-anten-tich-cuc">
-                                                        <img src="http://hstatic.net/0/0/global/noDefaultImage6_large.gif" alt="So sánh Anten thụ động và Anten tích cực" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/so-sanh-anten-thu-dong-va-anten-tich-cuc">
-                                                        So sánh Anten thụ động và Anten tích cực
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        So sánh giữa Anten thụ động và Anten tích cực trong RF, WirelessNguồn trích dẫn: http://www.rfwireless-world.com/Term...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>19</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 08</span>
-                                                                        <span class="publishYear">2018</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/syhnc-and-atmega8">
-                                                        <img src="http://file.hstatic.net/1000223613/article/syh_sensor_large.png" alt="SYHNC and Atmega8" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/syhnc-and-atmega8">
-                                                        SYHNC and Atmega8
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>19</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 08</span>
-                                                                        <span class="publishYear">2018</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/thong-so-dau-ra-nguon-dc">
-                                                        <img src="http://file.hstatic.net/1000223613/article/dcdc_output_large.png" alt="Thông số đầu ra nguồn DC" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/thong-so-dau-ra-nguon-dc">
-                                                        Thông số đầu ra nguồn DC
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        Mô tả ý nghĩa thông số đầu ra của một nguồn DCĐặt vấn đề:Chào các bạn, KME sau khi trả lời những thắc mắc của các khá...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>19</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 08</span>
-                                                                        <span class="publishYear">2018</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/cam-bien-do-am-nhiet-do-dung-hs1101-ds18b20">
-                                                        <img src="http://file.hstatic.net/1000223613/article/hs1101_ds18b20_atmega8_large.png" alt="Cảm biến độ ẩm nhiệt độ dùng HS1101+DS18B20" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/cam-bien-do-am-nhiet-do-dung-hs1101-ds18b20">
-                                                        Cảm biến độ ẩm nhiệt độ dùng HS1101+DS18B20
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        ỨNG DỤNG HS1101, DS18B20 VỚI ATMEGA8Đặng Minh Khang- KME Electronics1. Tổng quanTrong ứng dụng hàng ngày, nhu cầu the...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>19</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 08</span>
-                                                                        <span class="publishYear">2018</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                                                <div class="article-item">
-                                                    <div class="article-img">
-                                                        <a href="/blogs/news/1-bai-viet-mau">
-                                                        <img src="http://file.hstatic.net/1000223613/article/resistorcolorcode_large.gif" alt="Tính giá trị điện trở" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-title text-center">
-                                                        <a href="/blogs/news/1-bai-viet-mau">
-                                                        Tính giá trị điện trở
-                                                        </a>
-                                                    </div>
-                                                    <div class="article-desc rte text-center">
-                                                        RESISTOR COLOR CODE CALCULATORBảng tính trên sẽ hiển thị giá trị, sai số và thực hiện kiểm tra nếu điện trở tính toán...
-                                                    </div>
-                                                    <div class="article-info">
-                                                        <div class="grid mg-left-0">
-                                                            <div class="grid__item large--five-twelfths medium--six-twelfths small--five-twelfths pd-left0">
-                                                                <div class="article-publishDate">
-                                                                    <div class="publishDate">
-                                                                        <span>11</span>
-                                                                    </div>
-                                                                    <div class="publishMonth-Year">
-                                                                        <span class="publishMonth">Tháng 09</span>
-                                                                        <span class="publishYear">2017</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="grid__item large--seven-twelfths medium--six-twelfths small--seven-twelfths pd-left0">
-                                                                <div class="article-like-comment-counts text-right">
-                                                                    <span class="comment-count"><i class="fa fa-weixin" aria-hidden="true"></i> 0 bình luận</span>
-                                                                    <!--<span class="like-count"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 125 like</span>-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <p>
+                                                <input type="checkbox" id="address_default_address_new" name="address[default]" value="1">
+                                                <label for="address_default_address_new" class="inline">Cài làm địa chỉ mặc định</label>
+                                            </p>
+                                            <p><input type="submit" class="btn" value="Thêm địa chỉ"></p>
+                                            <p><a href="#" onclick="Haravan.CustomerAddress.toggleNewForm(); return false;">Bỏ qua</a></p>
+                                            <hr>
                                         </div>
-                                    </div>
-                                    <div id="pagination-" class="pagination-custom text-center">
-                                    </div>
+                                    </form>
+                                    <h2>Địa chỉ</h2>
+                                    <h3>
+                                        A B
+                                        (Mặc định)
+                                    </h3>
+                                    <p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        70000<br>
+                                        <br>
+                                    </p>
+                                    <p>
+                                        <a href="#" onclick="$('#EditAddress').toggle();return false">Sửa</a> |
+                                        <a href="#" onclick="Haravan.CustomerAddress.destroy(1039233163);return false">Xóa</a>
+                                    </p>
+                                    <form accept-charset='UTF-8' action='/account/addresses/1039233163' id='address_form' method='post'>
+                                        <input name='form_type' type='hidden' value='customer_address'>
+                                        <input name='utf8' type='hidden' value='✓'>
+                                        <div id="EditAddress" class="form-vertical" style="display:none;">
+                                            <h4>Sửa địa chỉ</h4>
+                                            <div class="grid">
+                                                <div class="grid__item one-half small--one-whole">
+                                                    <label for="AddressFirstName_1039233163">Tên</label>
+                                                    <input type="text" id="AddressFirstName_1039233163" class="input-full" name="address[first_name]" value="a" autocapitalize="words">
+                                                </div>
+                                                <div class="grid__item one-half small--one-whole">
+                                                    <label for="AddressLastName_1039233163">Họ</label>
+                                                    <input type="text" id="AddressLastName_1039233163" class="input-full" name="address[last_name]" value="b" autocapitalize="words">
+                                                </div>
+                                            </div>
+                                            <label for="AddressCompany_1039233163">Công ty</label>
+                                            <input type="text" id="AddressCompany_1039233163" class="input-full" name="address[company]" value="" autocapitalize="words">
+                                            <label for="AddressAddress1_1039233163">Địa chỉ 1</label>
+                                            <input type="text" id="AddressAddress1_1039233163" class="input-full" name="address[address1]" value="" autocapitalize="words">
+                                            <label for="AddressAddress2_1039233163">Địa chỉ 2</label>
+                                            <input type="text" id="AddressAddress2_1039233163" class="input-full" name="address[address2]" value="" autocapitalize="words">
+                                            <label for="AddressCity_1039233163">Thành phố</label>
+                                            <input type="text" id="AddressCity_1039233163" class="input-full" name="address[city]" value="" autocapitalize="words">
+                                            <label for="AddressCountry_1039233163">Quốc gia</label>
+                                            <select id="AddressCountry_1039233163" class="input-full" name="address[country]" data-default="">
+                                                <option value"" data-provinces="[]">- Please Select --</option>
+                                                <option value="Vietnam" data-provinces='["Hồ Chí Minh","Hà Nội","Đà Nẵng","An Giang","Bà Rịa - Vũng Tàu","Bắc Giang","Bắc Kạn","Bạc Liêu","Bắc Ninh","Bến Tre","Bình Định","Bình Dương","Bình Phước","Bình Thuận","Cà Mau","Cần Thơ","Cao Bằng","Đắk Lắk","Đắk Nông","Điện Biên","Đồng Nai","Đồng Tháp","Gia Lai","Hà Giang","Hà Nam","Hà Tĩnh","Hải Dương","Hải Phòng","Hậu Giang","Hòa Bình","Hưng Yên","Khánh Hòa","Kiên Giang","Kon Tum","Lai Châu","Lâm Đồng","Lạng Sơn","Lào Cai","Long An","Nam Định","Nghệ An","Ninh Bình","Ninh Thuận","Phú Thọ","Phú Yên","Quảng Bình","Quảng Nam","Quảng Ngãi","Quảng Ninh","Quảng Trị","Sóc Trăng","Sơn La","Tây Ninh","Thái Bình","Thái Nguyên","Thanh Hóa","Thừa Thiên Huế","Tiền Giang","Trà Vinh","Tuyên Quang","Vĩnh Long","Vĩnh Phúc","Yên Bái"]'>Vietnam</option>
+                                                <option value="United States" data-provinces='["Alabama","Alaska","American Samoa","Arizona","Arkansas","Armed Forces Americas","Armed Forces Europe","Armed Forces Pacific","California","Colorado","Connecticut","Delaware","District of Columbia","Federated States of Micronesia","Florida","Georgia","Guam","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Marshall Islands","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Northern Mariana Islands","Ohio","Oklahoma","Oregon","Palau","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virgin Islands","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>United States</option>
+                                                <option value="Thailand" data-provinces='["Amnat Charoen","Ang Thong","Bangkok","Bueng Kan","Buriram","Chachoengsao","Chai Nat","Chaiyaphum","Chanthaburi","Chiang Mai","Chiang Rai","Chon Buri","Chumphon","Kalasin","Kamphaeng Phet","Kanchanaburi","Khon Kaen","Krabi","Lampang","Lamphun","Loei","Lopburi","Mae Hong Son","Maha Sarakham","Mukdahan","Nakhon Nayok","Nakhon Pathom","Nakhon Phanom","Nakhon Ratchasima","Nakhon Sawan","Nakhon Si Thammarat","Nan","Narathiwat","Nong Bua Lam Phu","Nong Khai","Nonthaburi","Pathum Thani","Pattani","Pattaya","Phangnga","Phatthalung","Phayao","Phetchabun","Phetchaburi","Phichit","Phitsanulok","Phra Nakhon Si Ayutthaya","Phrae","Phuket","Prachin Buri","Prachuap Khiri Khan","Ranong","Ratchaburi","Rayong","Roi Et","Sa Kaeo","Sakon Nakhon","Samut Prakan","Samut Sakhon","Samut Songkhram","Saraburi","Satun","Sing Buri","Sisaket","Songkhla","Sukhothai","Suphan Buri","Surat Thani","Surin","Tak","Trang","Trat","Ubon Ratchathani","Udon Thani","Uthai Thani","Uttaradit","Yala","Yasothon"]'>Thailand</option>
+                                            </select>
+                                            <div id="AddressProvinceContainer_1039233163" style="display:none">
+                                                <label for="AddressProvince_1039233163">Tỉnh</label>
+                                                <select id="AddressProvince_1039233163" class="input-full" name="address[province]" data-default=""></select>
+                                            </div>
+                                            <div class="grid">
+                                                <div class="grid__item one-half small--one-whole">
+                                                    <label for="AddressZip_1039233163">Postal/Zip Code</label>
+                                                    <input type="text" id="AddressZip_1039233163" class="input-full" name="address[zip]" value="70000" autocapitalize="characters">
+                                                </div>
+                                                <div class="grid__item one-half small--one-whole">
+                                                    <label for="AddressPhone_1039233163">Điện thoại</label>
+                                                    <input type="tel" id="AddressPhone_1039233163" class="input-full" name="address[phone]" value="">
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <input type="checkbox" id="address_default_address_1039233163" name="address[default]" value="1">
+                                                <label for="address_default_address_1039233163" class="inline">Cài làm địa chỉ mặc định</label>
+                                            </p>
+                                            <p><input type="submit" class="btn" value="Cập nhật"></p>
+                                            <p><a href="#" onclick="$('#EditAddress').toggle(); return false;">Bỏ qua</a></p>
+                                            <hr>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -37,3 +37,33 @@
     text-decoration: none;
     cursor: pointer;
     }
+    /* detail product */
+    .hrvproduct-tabs .tabs {
+        border-bottom: 2px solid #E05543;
+        }
+        .hrvproduct-tabs .tabs li {
+        display: inline-block;
+        float: left;
+        transition: all 0.5s;
+        -webkit-transition: background 0.5s;
+        font-weight: bold;
+        color: #53A1CC;
+        }
+        .hrvproduct-tabs .tabs li.active,
+        .hrvproduct-tabs .tabs li:hover {
+        background-color: #E05543;
+        color: #FFFFFF;
+        }
+        .hrvproduct-tabs .tabs li a {
+        padding: 8px 12px !important;
+        text-transform: uppercase;
+        display: inline-block;
+        color: inherit;
+        }
+        .hrvproduct-tabs .tabs-content {
+        display: none;
+        padding: 10px;
+        }
+        .hrvproduct-tabs .tabs-content.active {
+        display: block;
+        }

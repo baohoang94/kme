@@ -122,6 +122,38 @@ jQuery(document).ready(function () {
         event.stopPropagation();
     });
     // End show/hide popup
+    // js in page detail
+    var menu = $('.hrvproduct-tabs .tabs li');
+    var menuLinks = $('.hrvproduct-tabs .tabs li a');
+    var tabsContent = $('.hrvproduct-tabs .tabs-content');
+    menuLinks.click(function (e) {
+        e.preventDefault();
+        var targetBlock = $(this).attr('href');
+        menu.removeClass('active');
+        $(this).parent('li').addClass('active');
+        tabsContent.hide();
+        $(targetBlock).fadeIn(500);
+    });
+    // end js detail
+    // begin js for eccordion
+    var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].onclick = function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		}
+	}
+	if($(window).width() > 769){
+		$('.accordion').trigger('click');
+    }
+    // end js for accrordion
+
     $('#example').height(function (index, height) {
         return (height + 20);
     });
